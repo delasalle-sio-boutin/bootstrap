@@ -14,6 +14,9 @@
                 }
         //-->
         </script>
+        <style>
+        	.col-sm-2{ line-height: px;}
+        </style>
   </head>
 <body>
 <body oncontextmenu="return false;">
@@ -27,24 +30,19 @@
 			<nav class="col-sm-2">Menu</nav>
 			<section class="col-sm-10">Section
 	        	<div class="row">
-		            <article class="col-sm-6">
-		              Article
+	        	<?php 
+	        	$i = 1;
+	        	do {
+	        		?>
+	        		<article class="col-sm-3">
+		              Article <?php echo $i ?>
 		            </article>
-		            <article class="col-sm-6">
-		              Article
-		            </article>
-		            <article class="col-sm-6">
-		              Article
-		            </article>
-		            <article class="col-sm-6">
-		              Article
-		            </article>
-		            <article class="col-sm-6">
-		              Article
-		            </article>
-		            <article class="col-sm-6">
-		              Article
-		            </article>
+		        	<?php
+		           	$i++;
+	        	}
+	        	while ($i <= 12)
+	        	?>
+		            
 	          	</div>
         	</section>	
 		</div>
